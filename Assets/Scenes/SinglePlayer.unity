@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 10955.509, g: 9990.642, b: 10446.079, a: 1}
+  m_IndirectSpecularColor: {r: 10945.173, g: 9981.61, b: 10440.642, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13586,13 +13586,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyText: {fileID: 207434963}
   wall: {fileID: 389062569}
-  wall2: {fileID: 0}
-  enemy1:
-  - {fileID: 5559972371891272143}
-  - {fileID: 1571476340}
-  - {fileID: 1670259089}
-  - {fileID: 1081080949}
-  - {fileID: 1622757166}
 --- !u!1001 &355569914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36210,6 +36203,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Key
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 766e106e74e05d2488d9806573644ee1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

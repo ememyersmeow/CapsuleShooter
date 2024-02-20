@@ -27,6 +27,7 @@ public class LVL5 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             keyValue += 1;
+            Update();
             keyText.text = "Keys: " + keyValue;
         }
     }

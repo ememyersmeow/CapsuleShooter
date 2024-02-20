@@ -9,8 +9,6 @@ public class LVL2 : MonoBehaviour
     public TMP_Text keyText;
     public GameObject wall;
 
-    public GameObject[] enemy2 = new GameObject[7];
-
     void Update()
     {
         if (keyValue == 2)
@@ -25,6 +23,7 @@ public class LVL2 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             keyValue += 1;
+            Update();
             keyText.text = "Keys: " + keyValue;
         }
     }

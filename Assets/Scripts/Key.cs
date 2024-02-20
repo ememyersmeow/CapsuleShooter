@@ -30,7 +30,6 @@ public class Key : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Destroy(gameObject);
-            //interact 
         }
     }
 }
