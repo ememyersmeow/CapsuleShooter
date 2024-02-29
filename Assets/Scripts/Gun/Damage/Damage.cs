@@ -10,7 +10,7 @@ public class Damage : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            HPplayer.HP -= damage;
+            other.GetComponent<HPplayer>().HP -= damage;
         }
     }
 }

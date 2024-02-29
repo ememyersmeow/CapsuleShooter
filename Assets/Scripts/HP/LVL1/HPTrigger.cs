@@ -24,18 +24,13 @@ public class HPTrigger : MonoBehaviour
         transform.Rotate(new Vector3(0, 0.5f, 0));
     }
 
-    void PlayerHP()
-    {
-        HPplayer.HP += 20;
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            if (HPplayer.HP <= 60)
+            if (other.GetComponent<HPplayer>().HP <= 60)
             {
-                PlayerHP();
+                other.GetComponent<HPplayer>().HP += 20;
                 Destroy(gameObject);
             }
             else

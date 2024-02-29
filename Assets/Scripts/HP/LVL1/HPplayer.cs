@@ -4,12 +4,12 @@ using TMPro;
 
 public class HPplayer : MonoBehaviour
 {
-    public static int HP = 100;  
+    public int HP = 100;  
     public TMP_Text HPText;
 
     void Update()
     {
-        HPText.text = HP + "";
+        HPText.text = HP.ToString() + "";
 
         if(HP <= 25)
         {

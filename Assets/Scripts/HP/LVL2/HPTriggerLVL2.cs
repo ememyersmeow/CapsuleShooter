@@ -24,18 +24,14 @@ public class HPTriggerLVL2 : MonoBehaviour
         transform.Rotate(new Vector3(0, 0.5f, 0));
     }
 
-    void PlayerHP()
-    {
-        HPplayerLVL2.HP += 150;
-    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            if (HPplayer.HP <= 350)
+            if (other.GetComponent<HPplayerLVL2>().HP <= 350)
             {
-                PlayerHP();
+                other.GetComponent<HPplayerLVL2>().HP += 150;
                 Destroy(gameObject);
             }
             else
