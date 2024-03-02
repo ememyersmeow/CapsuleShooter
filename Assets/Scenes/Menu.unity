@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 8632.427, g: 9041.001, b: 13111.502, a: 1}
+  m_IndirectSpecularColor: {r: 8632.302, g: 9040.97, b: 13111.939, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -632,6 +632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   back: {fileID: 0}
+  sceneName: 
 --- !u!1 &157207112
 GameObject:
   m_ObjectHideFlags: 0
@@ -4283,6 +4284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   back: {fileID: 141120555}
+  sceneName: City Park
 --- !u!1001 &1011420114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9255,7 +9257,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -34.000183, y: 0}
+  m_AnchoredPosition: {x: -34.000244, y: 0}
   m_SizeDelta: {x: -1132, y: -398}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1890209911
@@ -9271,6 +9273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   back: {fileID: 141120555}
+  sceneName: 
 --- !u!114 &1890209912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9498,7 +9501,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -34.000183, y: 0}
+  m_AnchoredPosition: {x: -34.000244, y: 0}
   m_SizeDelta: {x: -1132, y: -398}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2010451900

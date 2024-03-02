@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.ProBuilder.MeshOperations;
 
 public class HPTrigger : MonoBehaviour
 {
@@ -28,15 +29,19 @@ public class HPTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (other.GetComponent<HPplayer>().HP <= 60)
+            if (other.TryGetComponent(out HPplayer hp) && hp.redHp <= hp.currentHP)
             {
-                other.GetComponent<HPplayer>().HP += 20;
+                hp.currentHP += hp.addHP;
                 Destroy(gameObject);
             }
             else
             {
-                Debug.Log("Your HP > 60");
+                Debug.Log("Your HP > redHP");
             }
         }
     }
 }
+
+
+
+

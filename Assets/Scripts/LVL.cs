@@ -1,17 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class LVL2i2 : MonoBehaviour
+public class LVL : MonoBehaviour
 {
-    private int keyValue = 1;
+    [SerializeField]private int keyValue;
+    private int currentKeyValue;
     public TMP_Text keyText;
     public GameObject wall;
+    public GameObject wall2;
 
+    void Awake()
+    {
+        currentKeyValue = keyValue + 1;
+    }
     void Update()
     {
-        if (keyValue == 2)
+        if (keyValue == currentKeyValue)
         {
             Destroy(wall.gameObject);
         }
@@ -25,6 +29,11 @@ public class LVL2i2 : MonoBehaviour
             keyText.text = "Keys: " + keyValue;
             Update();
             Destroy(gameObject);
+        }
+
+        if (currentKeyValue == 5)
+        {
+            Destroy(wall2.gameObject);
         }
     }
 }

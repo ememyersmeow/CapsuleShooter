@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class LavaTrigger : MonoBehaviour
@@ -8,18 +7,18 @@ public class LavaTrigger : MonoBehaviour
     private float lastTime;
     public float fireRate = 0.5f;
     public bool inLava = false;
-    private HPplayerLVL2 hpplayer;
+    private HPplayer hpplayer;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             inLava = true;
-            hpplayer = collision.gameObject.GetComponent<HPplayerLVL2>();
+            hpplayer = collision.gameObject.GetComponent<HPplayer>();
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider collision)
     {
         if (collision.gameObject.tag == "Player")
         {
@@ -32,7 +31,7 @@ public class LavaTrigger : MonoBehaviour
         if ((Time.time - lastTime) > fireRate && inLava)
         {
             lastTime = Time.time;
-            hpplayer.HP -= damage;
+            hpplayer.currentHP -= damage;
         }
     }
 }

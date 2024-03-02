@@ -2,18 +2,20 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class HPplayerLVL2 : MonoBehaviour
+public class HPplayer : MonoBehaviour
 {
-    public int HP = 500;
+    public int currentHP;
+    public int maxHP;
+    public int redHp;
+    public int addHP;
     public TMP_Text HPText;
     public Transform player;
 
-
     void Update()
     {
-        HPText.text = HP + "";
+        HPText.text = currentHP.ToString() + "";
 
-        if (HP <= 130)
+        if(currentHP <= redHp)
         {
             HPText.color = Color.red;
         }
@@ -21,17 +23,15 @@ public class HPplayerLVL2 : MonoBehaviour
         {
             HPText.color = Color.white;
         }
-
         Die();
     }
 
     public void Die()
     {
-        if(HP <= 0)
+        if (currentHP <= 0)
         {
             Destroy(player);
             SceneManager.LoadScene(3);
         }
     }
 }
-

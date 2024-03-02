@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
   - enabled: 1
-    path: Assets/Scenes/SinglePlayer.unity
+    path: Assets/Scenes/Game Scenes/City Park.unity
     guid: accde64fef195f143a19ad15e7e9829a
   - enabled: 1
-    path: Assets/Scenes/SinglePlayerLVL2.unity
+    path: Assets/Scenes/Game Scenes/Hell.unity
     guid: 924b8686ec52263409307ca6e787ff70
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Space.unity
+    guid: 1db62016def1a5943886c884784cdace
+  - enabled: 1
+    path: Assets/Scenes/Die Scene.unity
+    guid: e6f2fcab79ba33b4da9bb770f2fd83ac
   m_configObjects: {}
